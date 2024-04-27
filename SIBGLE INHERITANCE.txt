@@ -1,0 +1,44 @@
+import java.util.Scanner;
+class a{
+	int a,b;
+	void input()
+	{
+		Scanner sc=new Scanner (System.in);
+		System.out.println("Enter fist number ");
+		a= sc.nextInt();
+		System.out.println("Enter second number ");
+		b= sc.nextInt();
+	}
+	void add ()
+	{
+		System.out.println("Addition of two number is : "+(a+b));
+	}
+}
+class b extends a
+{
+	int c;
+	void getdata () 
+	{
+		Scanner sc = new Scanner (System.in);
+		System.out.println("Enter value of c  ");
+		c= sc.nextInt();
+	}
+	void display ()
+	{
+		System.out.println("Addition of three number is "+(a+b+c));
+	} 
+}
+ public class main
+{
+	public static void main (String [] args)
+	
+	{
+		b aa=new b();
+		aa. input ();
+		aa. getdata ();
+		aa. add();
+		aa. display();
+	}
+	
+
+}
